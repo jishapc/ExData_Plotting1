@@ -26,6 +26,8 @@ with(data, {
         points(x,data$Sub_metering_1, type="l", col="black")
         points(x,data$Sub_metering_2, type="l", col="red")
         points(x,data$Sub_metering_3, type="l", col="blue")
+        legend("topright", lty= "solid",col = c("black","red", "blue"), bty="n",legend = c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"))
+        
     })
     plot(x,data$Global_reactive_power, type="l", col="black", xlab="datetime",ylab="Global_reactive_power")
 })
